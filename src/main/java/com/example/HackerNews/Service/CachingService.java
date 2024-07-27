@@ -11,7 +11,7 @@ public class CachingService {
     @Autowired
     CacheManager cacheManager;
 
-    @Scheduled(cron = "0 0/15 * * * ?")
+    @Scheduled(fixedDelay = 60000)
     public void evictAllCaches() {
         cacheManager.getCache("topstories").clear();
     }

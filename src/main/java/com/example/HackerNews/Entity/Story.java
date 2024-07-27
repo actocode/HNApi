@@ -13,28 +13,17 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Story implements Serializable {
+public class Story {
 
-
-    @JsonProperty("by")
-    String by;
-    @JsonProperty("descendants")
-    int descendants;
     @Id
     @JsonProperty("id")
-    int id;
-    @JsonProperty("kids")
+    int story_id;
+    String by;
+    int descendants;
     int[] kids;
-    @JsonProperty("score")
     int score;
-    @JsonProperty("time")
     long time;
-    @JsonProperty("title")
     String title;
-    @JsonProperty("type")
     String type;
-    @JsonProperty("url")
     String url;
-
-
 }

@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "f819a2b3-4352-4adc-9efd-175ab15440d4",
+		"name": "HackerNews",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "7234332"
+	},
+	"item": [
+		{
+			"name": "GetPastStories",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Past Stories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/v0/past-stories"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 09:57:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"by\": \"gsky\",\n        \"score\": 9,\n        \"time\": 1722059358,\n        \"title\": \"VCs are still pouring billions into generative AI startups\",\n        \"url\": \"https://techcrunch.com/2024/07/24/vcs-are-still-pouring-billions-into-generative-ai-startups/\"\n    },\n    {\n        \"by\": \"0x54MUR41\",\n        \"score\": 5,\n        \"time\": 1722060247,\n        \"title\": \"Beating the CAP theorem checklist (2013)\",\n        \"url\": \"https://ferd.ca/beating-the-cap-theorem-checklist.html\"\n    },\n    {\n        \"by\": \"conanxin\",\n        \"score\": 100,\n        \"time\": 1722061502,\n        \"title\": \"In the Beginning Was the Command Line\",\n        \"url\": \"https://web.stanford.edu/class/cs81n/command.txt\"\n    },\n    {\n        \"by\": \"pjmlp\",\n        \"score\": 12,\n        \"time\": 1722062762,\n        \"title\": \"CrowdStrike update may cost world billions – and insurance ain't covering it all\",\n        \"url\": \"https://www.theregister.com/2024/07/26/crowdstrike_insurance_money/\"\n    },\n    {\n        \"by\": \"iFelix\",\n        \"score\": 1,\n        \"time\": 1722063634,\n        \"title\": \"Twenty (YC S23) Is Hiring a Software Engineer in Paris\",\n        \"url\": \"https://www.ycombinator.com/companies/twenty/jobs/b1Uku7w-senior-software-engineer\"\n    },\n    {\n        \"by\": \"Emigre_\",\n        \"score\": 5,\n        \"time\": 1722067309,\n        \"title\": \"A new movement of luddites is rising up against AI\",\n        \"url\": \"https://www.theguardian.com/commentisfree/article/2024/jul/27/harm-ai-artificial-intelligence-backlash-human-labour\"\n    },\n    {\n        \"by\": \"yla92\",\n        \"score\": 17,\n        \"time\": 1722071429,\n        \"title\": \"SQLite: 35% Faster Than the Filesystem\",\n        \"url\": \"https://sqlite.org/fasterthanfs.html\"\n    },\n    {\n        \"by\": \"keepamovin\",\n        \"score\": 4,\n        \"time\": 1722071970,\n        \"title\": \"Orcas sink $128K yacht in Mediterranean attack: 'Like watching wolves hunt'\",\n        \"url\": \"https://nypost.com/2024/07/26/world-news/killer-whales-sink-128k-yacht-in-2-hour-mediterranean-sea-attack/\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetTopStories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/v0/top-stories"
+			},
+			"response": [
+				{
+					"name": "GetTopStories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/v0/top-stories"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 09:56:49 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"by\": \"conanxin\",\n        \"score\": 100,\n        \"time\": 1722061502,\n        \"title\": \"In the Beginning Was the Command Line\",\n        \"url\": \"https://web.stanford.edu/class/cs81n/command.txt\"\n    },\n    {\n        \"by\": \"yla92\",\n        \"score\": 17,\n        \"time\": 1722071429,\n        \"title\": \"SQLite: 35% Faster Than the Filesystem\",\n        \"url\": \"https://sqlite.org/fasterthanfs.html\"\n    },\n    {\n        \"by\": \"pjmlp\",\n        \"score\": 12,\n        \"time\": 1722062762,\n        \"title\": \"CrowdStrike update may cost world billions – and insurance ain't covering it all\",\n        \"url\": \"https://www.theregister.com/2024/07/26/crowdstrike_insurance_money/\"\n    },\n    {\n        \"by\": \"gsky\",\n        \"score\": 9,\n        \"time\": 1722059358,\n        \"title\": \"VCs are still pouring billions into generative AI startups\",\n        \"url\": \"https://techcrunch.com/2024/07/24/vcs-are-still-pouring-billions-into-generative-ai-startups/\"\n    },\n    {\n        \"by\": \"0x54MUR41\",\n        \"score\": 5,\n        \"time\": 1722060247,\n        \"title\": \"Beating the CAP theorem checklist (2013)\",\n        \"url\": \"https://ferd.ca/beating-the-cap-theorem-checklist.html\"\n    },\n    {\n        \"by\": \"Emigre_\",\n        \"score\": 5,\n        \"time\": 1722067309,\n        \"title\": \"A new movement of luddites is rising up against AI\",\n        \"url\": \"https://www.theguardian.com/commentisfree/article/2024/jul/27/harm-ai-artificial-intelligence-backlash-human-labour\"\n    },\n    {\n        \"by\": \"keepamovin\",\n        \"score\": 4,\n        \"time\": 1722071970,\n        \"title\": \"Orcas sink $128K yacht in Mediterranean attack: 'Like watching wolves hunt'\",\n        \"url\": \"https://nypost.com/2024/07/26/world-news/killer-whales-sink-128k-yacht-in-2-hour-mediterranean-sea-attack/\"\n    },\n    {\n        \"by\": \"iFelix\",\n        \"score\": 1,\n        \"time\": 1722063634,\n        \"title\": \"Twenty (YC S23) Is Hiring a Software Engineer in Paris\",\n        \"url\": \"https://www.ycombinator.com/companies/twenty/jobs/b1Uku7w-senior-software-engineer\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "DeleteStories",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8081/v0/deleteStories"
+			},
+			"response": []
+		},
+		{
+			"name": "GetComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/v0/41085376/comments"
+			},
+			"response": [
+				{
+					"name": "GetComments",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/v0/41085376/comments"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jul 2024 10:02:26 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"text\": \"Why hasn’t someone made sqlitefs yet?\",\n        \"by\": \"me551ah\"\n    }\n]"
+				}
+			]
+		}
+	]
+}

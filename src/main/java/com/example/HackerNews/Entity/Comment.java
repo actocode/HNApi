@@ -1,6 +1,7 @@
 package com.example.HackerNews.Entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
@@ -13,31 +14,23 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Comment implements Serializable {
+public class Comment {
 
-    @JsonProperty("by")
-    String by;
-    @JsonProperty("descendants")
-    int descendants;
     @Id
-    @JsonProperty("id")
     long id;
-    @JsonProperty("kids")
+    String by;
+    int descendants;
     int[] kids;
-    @JsonProperty("parent")
     long parent;
-    @JsonProperty("time")
     long time;
-    @JsonProperty("text")
+    @Column(name = "text", length = 1888)
     String text;
-    @JsonProperty("type")
     String type;
 
     public int getKidsLength() {
         if (getKids() != null)
             return kids.length;
-        else return 0;
+        return 0;
     }
-
 
 }
